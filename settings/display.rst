@@ -56,6 +56,29 @@ The *Configure* button provides the following settings:
 * **SLI:** add a second Voodoo 2 card to the system, connected to the first one through a Scan Line Interleave (SLI) interface.
 * **Dynamic Recompiler:** enable the Voodoo recompiler for faster emulation.
 
+NVidia Riva 128 (NV3)
+---------------------
+
+Emulate an **NVidia RIVA 128** 2D/3D accelerator, connected to the PCI or AGP buses.
+
+.. note:: Emulation of the NVidia RIVA 128 is still in development. Bugs are to be expected.
+
+The *Configure* button provides the following settings:
+
+* **Chip revision:** Chip revision to emulate.
+
+   * **Revision A / NV3A (January 1997):** Prototype model from January 1997 with an integrated sound card.
+   * **Revision B / NV3B (October 1997):** Released model with up to 4 MB of Video RAM. The default.
+   * **Revision C / NV3C (March 1998):** Commercialised as the "Riva 128 ZX". A deeper FIFO cache, faster RAMDAC and up to 8 MB of VRAM.
+
+* **VRAM:** The VRAM size on the card.
+
+   * Can be 2 MB, 4 MB or 8 MB. 8 MB is only compatible with Revision C, though.
+
+* **VBIOS:** The VBIOS to use.
+
+   * Allows selection of a vendor. Provides a subsystem ID which will alter the reported card name in Windows. Some VBIOSes are only compatible with certain revisions. 
+
 IBM 8514/A / XGA Graphics
 -------------------------
 
