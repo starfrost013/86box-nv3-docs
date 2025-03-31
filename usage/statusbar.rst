@@ -47,8 +47,9 @@ A CD icon will appear for each configured :ref:`CD-ROM drive <settings/floppycdr
 * **Mute:** mute any :ref:`hardware/diskimages:CD audio` played through this drive's analog output. CD audio is unmuted by default on the first configured CD-ROM drive.
 * **Image:** insert a :ref:`CD-ROM or DVD-ROM disc image file <hardware/diskimages:CD-ROM / DVD-ROM optical disc images>` into this drive. Dragging and dropping an image file on the icon will also load it.
 * **Folder:** insert a virtual CD-ROM or DVD-ROM with the contents of a host folder into this drive. Dragging and dropping a folder on the icon will also load it.
-* A history of the last few images or folders that were loaded into this drive. Click on an entry to load it back.
-* **Eject:** remove any disc inserted into this drive.
+* A history of the last few images, folders or host drives that were loaded into this drive. Click on an entry to load it back.
+* A list of host CD-ROM or DVD-ROM drives available for passthrough. Click on an entry to attach it to the emulated drive.
+* **Eject:** remove any disc inserted into this drive, or detach a host drive.
 
 |zip| |mo| ZIP and MO drives
 ----------------------------
@@ -76,9 +77,12 @@ A network icon will appear for each configured :doc:`network card <../settings/n
 |sound| Sound
 -------------
 
-This icon is always present. Double-clicking it opens a sound gain control, which allows you to increase the loudness of all audio produced by the emulated machine's PC speaker, :doc:`sound cards <../settings/sound>` and other sound hardware.
+This icon is always present, providing options to control all audio produced by the emulated machine's PC speaker, :doc:`sound cards <../settings/sound>` and other sound hardware.
 
-.. note:: The gain control does not apply to MIDI music sent to a software synthesizer through the :ref:`System MIDI <settings/sound:MIDI Out Device>` device, as these synthesizers are external to 86Box.
+* **Mute:** mute all audio.
+* **Sound gain:** open a gain control, which allows for increasing the loudness of all audio.
+
+.. note:: Sound options do not apply to MIDI music sent to a software synthesizer through the :ref:`System MIDI <settings/sound:MIDI Out Device>` device, as these synthesizers are external to 86Box.
 
 Additional information area
 ---------------------------
