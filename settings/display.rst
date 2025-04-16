@@ -56,49 +56,42 @@ The *Configure* button provides the following settings:
 * **SLI:** add a second Voodoo 2 card to the system, connected to the first one through a Scan Line Interleave (SLI) interface.
 * **Dynamic Recompiler:** enable the Voodoo recompiler for faster emulation.
 
-nVIDIA Riva 128 (NV3)
+nVIDIA RIVA 128 (NV3)
 ---------------------
 
 Emulate an **nVIDIA RIVA 128** 2D/3D accelerator, connected to the PCI or AGP buses.
 
-.. note:: Emulation of the NVidia RIVA 128 is still in development. Bugs are to be expected.
+.. note:: Emulation of the nVIDIA RIVA 128 is still in development. Bugs are to be expected.
 
 The *Configure* button provides the following settings:
 
 * **Chip revision:** Chip revision to emulate ()
 
-   * **Riva 128 prototype (January 1997):** Prototype model from January 1997 with an integrated sound card.
-   * **Riva 128 (Revision B) (October 1997):** Released model with up to 4 MB of Video RAM. The default.
-   * **Riva 128 ZX  (Revision C) (March 1998):** Commercialised as the "Riva 128 ZX". A deeper FIFO cache, faster RAMDAC and up to 8 MB of VRAM.
+   * **RIVA 128 prototype (January 1997):** Prototype model from January 1997 with an integrated sound card. Only switch to this if you know what you are doing.
+   * **RIVA 128 (Revision B) (October 1997):** Released model with up to 4 MB of Video RAM. The default value.
 
 * **VRAM:** The VRAM size on the card.
 
    * Can be 2 MB, 4 MB or 8 MB. 8 MB is only compatible with Revision C, though.
 
-* **Model:** The VBIOS to use.
+* **Model:** The Video BIOS to use.
 
-   * Allows selection of a vendor. Provides a subsystem ID which will alter the reported card name in Windows. 
+   * Allows selection of a vendor. Provides a subsystem ID which will alter the reported card name in Windows, and may slightly change the card's splash screen in some cases.
 
 * **Render threads:**: Number of render threads to use in 3D rendering.
 
    * 1, 2, 4 and 8 can be selected. 
 
-nVIDIA Riva 128 ZX (NV3T)
+nVIDIA RIVA 128 ZX (NV3T)
 -------------------------
 
 Emulate an **nVIDIA RIVA 128ZX** 2D/3D accelerator, connected to the PCI or AGP buses.
 
-.. note:: Emulation of the NVidia RIVA 128 ZX is still in development. Bugs are to be expected. Also, the Riva 128 ZX is always revision C and always has 8 MB of Video RAM.
-
-* **Chip revision:** Chip revision to emulate ()
-
-   * **Riva 128 prototype (January 1997):** Prototype model from January 1997 with an integrated sound card.
-   * **Riva 128 (Revision B) (October 1997):** Released model with up to 4 MB of Video RAM. The default.
-   * **Riva 128 ZX  (Revision C) (March 1998):** Commercialised as the "Riva 128 ZX". A deeper FIFO cache, faster RAMDAC and up to 8 MB of VRAM.
+.. note:: Emulation of the nVIDIA RIVA 128 ZX is still in development. Bugs are to be expected. Also, the Riva 128 ZX is always revision C and always has 8 MB of Video RAM.
 
 * **Model:** The Video BIOS to use.
 
-   * Allows selection of a vendor. Provides a subsystem ID which will alter the reported card name in Windows.
+   * Allows selection of a vendor. Provides a subsystem ID which will alter the reported card name in Windows, and may slightly change the card's splash screen in some cases.
 
 * **Render threads:**: Number of render threads to use in 3D rendering.
 
