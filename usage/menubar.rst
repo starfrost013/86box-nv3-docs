@@ -33,14 +33,17 @@ View
 
 * **Renderer options:** open a window to configure the *OpenGL (3.0 Core)* renderer. This option will be available if that renderer is selected.
 
-   * **Target framerate:** select the framerate at which the emulated display is updated. *Synchronize with video* automatically uses the emulated display's current refresh rate.
+   * **Synchronize with video:** update the emulated display at its current refresh rate.
+   * **Use target framerate:** update the emulated display at the selected refresh rate.
    * **VSync:** enable vertical sync. Recommended if tearing artifacts are observed.
-   * **Browse:** load a ``.glsl`` shader file to apply to the emulated display.
-   * **Remove:** disable the currently-loaded shader.
+   * **Add:** add a ``.glsl`` or ``.glslp`` file to the list of shaders to apply on the emulated display.
+   * **Remove:** remove the selected shader from the list.
+   * **Configure:** open a window to configure parameters on the selected shader.
+   * **Move up/down:** move the selected shader up or down in the processing order.
 
-.. note:: * Many shaders are available for simulating CRT displays, VHS tapes and other aesthetics; the `RetroArch glsl-shaders repository <https://github.com/libretro/glsl-shaders>`_ is a good place to start.
-          * Shaders that take advantage of multipass and previous frames are not supported.
-          * ``.cg`` and ``.cgp`` shaders are not supported either, as these formats are long deprecated.
+.. note::
+  * Many shaders are available for simulating CRT displays, VHS tapes and other aesthetics; the `RetroArch glsl-shaders repository <https://github.com/libretro/glsl-shaders>`_ is a good place to start.
+  * ``.cg`` and ``.cgp`` shaders are not supported, as these formats are long deprecated.
 
 * **Specify dimensions:** open a window where an exact size (in pixels) for the emulated display can be set. If checked, the *Lock to this size* box prevents changes in the emulated display's resolution from overriding the specified size.
 * **Force 4:3 display ratio:** stretch the emulated display to a 4:3 aspect ratio, independently of the emulated machine's screen resolution.
@@ -72,9 +75,9 @@ View
 Media
 -----
 
-This menu lists all storage drives and network cards attached to the emulated machine, and provides the same controls that are accessible by clicking the respective device's icon on the :doc:`status bar <statusbar>`.
+This menu lists all storage drives and network cards attached to the emulated machine, and provides the same options that are accessible by clicking the respective device's icon on the :doc:`status bar <statusbar>`.
 
-The **Clear image history** option empties the list of recently-loaded image files or folders on all storage drives.
+The **Clear image history** option empties the list of recently-loaded images on all storage drives.
 
 Tools
 -----
@@ -86,13 +89,15 @@ Tools
 .. note:: Integration requires the Discord desktop app, running on x86 or x64 Windows, ``x86_64`` Linux or Intel macOS. Discord does not provide integration support for other operating systems / architectures or the browser app. Additionally, integration will not be available on Windows if the included ``discord_game_sdk.dll`` file is missing from the 86Box directory.
 
 * **Take screenshot:** take a screenshot of the emulated display. Screenshots are saved as .png images in the ``screenshots`` subdirectory found in the emulated machine's directory, which can be opened with the **Open screenshots folder** option below.
-* **Sound gain:** open the :ref:`sound gain control <usage/statusbar:|sound| Sound>`, which is also accessible through the status bar.
+* **Sound:** provides the same options that are accessible by clicking the :ref:`sound icon on the status bar <usage/statusbar:|sound| Sound>`.
 * **Preferences:** open the *Preferences* window, which provides the following options:
 
    * **Language:** select a language for the 86Box user interface.
-   * **Icon set:** select an icon theme for the :doc:`status bar <statusbar>` and :doc:`Settings window <../settings/index>`.
    * **Mouse sensitivity:** adjust the emulated mouse's tracking sensitivity.
    * **Select media images from program working directory:** if checked, starts any file open/save prompts on the emulated machine's directory. This option is particularly useful for macOS users.
+   * **Inhibit multimedia keys on Windows:** if checked, multimedia keys such as **Volume Up/Down** will not be passed through to the emulated machine. This option is only available on Windows.
+   * **Ask for confirmation before saving settings / quitting / hard resetting:** enable confirmation messages for certain actions. These options can reenable confirmations after they have been disabled through the *Don't show this message again* box.
+   * **Display hotkey message when entering full-screen mode:** enable the *Ctrl+Alt+Page Down* reminder message upon entering full screen mode.
 
 * **MCA devices**: open the *MCA devices* window, which lists the IDs and required `Adapter Definition Files <https://ardent-tool.com/adapters/ADF.html>`_ of all Micro Channel devices installed on the emulated machine. This option will only be available when emulating a Micro Channel Architecture-based machine.
 * **Open screenshots folder**: open the host system's file browser on the directory where screenshots of this emulated machine are saved.
