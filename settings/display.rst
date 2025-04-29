@@ -63,7 +63,6 @@ Emulate an **nVIDIA RIVA 128** 2D/3D accelerator, connected to the PCI or AGP bu
 
 .. note:: Emulation of the nVIDIA RIVA 128 is still in development. Bugs are to be expected.
 
-.. warning:: The "STB Velocity 128 Ver.1.60" Video BIOS (dated 8 August 1997) has a bug that prevents the Windows 98 and ME CD-ROM startup menus from displaying correctly. This can be worked around by either mashing the down button or using a different VBIOS. Windows 95 is not affected.
 
 The *Configure* button provides the following settings:
 
@@ -77,6 +76,8 @@ The *Configure* button provides the following settings:
    * Can be 2 MB, 4 MB or 8 MB. 8 MB is only compatible with Revision C, though.
 
 * **Model:** The Video BIOS to use.
+
+   .. warning:: The "STB Velocity 128 Ver.1.60" Video BIOS (dated 8 August 1997) has a bug that prevents the Windows 98 and ME CD-ROM startup menus from displaying correctly. This can be worked around by either mashing the down button or using a different VBIOS. Windows 95 is not affected.
 
    * Allows selection of a vendor. Provides a subsystem ID which will alter the reported card name in Windows, and may slightly change the card's splash screen in some cases.
 
